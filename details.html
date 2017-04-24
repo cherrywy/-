@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+<title>车优视</title>
+<link type="text/css" href="css/reset.css" rel="stylesheet"/>
+<link type="text/css" href="css/css.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+</head>
+
+<body style="background:#3a3937;">
+<!--------------头部----------------->
+<header>
+	<div class="head_top">
+        <img src="img/head_logo.png"  width="120"/>
+        <a onClick="javascript:history.back(-1);">返回</a>
+    </div>
+</header>
+<!--------------视频模块----------------->
+<section class="videoInfo">
+	<video controls poster="img/video_pic.png" autoplay="autoplay" width="100%" src="http://114.247.0.113/v/92/18/1437543364222.mp4" type="video/mp4" preload="none">
+	</video>
+</section>
+<!--------------视频简介----------------->
+<section class="jianjie">
+	<h4>和宝马 BMW M3 一起去盘山</h4>
+    <p>M3的性能发挥比较的晦涩，一般人不看"宝典"还真不会，同时过重的V8车头让M3对前轮胎的性能要求太苛刻，稍微情况差点的轮胎就让M3连操控特性都改变了。</p>
+</section>
+
+<!--------------点赞 评论 阅读量----------------->
+<div class="dianzan">
+	<ul>
+    	<li class="userDz_sz"><img src="img/xq_1.png" width="20" /><span>144</span></li>
+        <li><img src="img/xq_2.png" width="20" /><span>243</span></li>
+        <li><img src="img/xq_3.png" width="20" /><span>评论</span></li>
+    </ul>
+    <div style=" clear:both; overflow:hidden;"></div>
+</div>
+
+<!--------------评论框----------------->
+<div class="pl">
+	<div class="pl_con">
+        <input type="text" placeholder=""/>
+        <samp class="wo">我：</samp>
+        <div class="pl_btn">评&nbsp;论</div>
+    </div>
+    <div style=" clear:both; overflow:hidden;"></div>
+</div>
+
+<!--------------评列表----------------->
+<section class="plList">
+	<div class="pl_list">
+        <div class="pl_conInfo">
+            <div class="pl_left"><img src="img/xq_4.png"  width="50" height="50"/></div>
+            <div class="pl_right">
+                <p>Yuri_mui：回复  奔腾的心：<em>车不错，就是贵！</em></p>
+            </div>
+            <div style=" clear:both; overflow:hidden;"></div>
+        </div> 
+        <div class="line"></div>
+        <div class="pl_conInfo">
+            <div class="pl_left"><img src="img/xq_5.png"  width="50"/></div>
+            <div class="pl_right">
+                <p>奔腾的心：<em>这一地树叶的看着就滑，还不慢点开</em></p>
+            </div>
+            <div style=" clear:both; overflow:hidden;"></div>
+        </div> 
+        <div class="line"></div>
+        <div class="pl_conInfo">
+            <div class="pl_left"><img src="img/xq_5.png"  width="50"/></div>
+            <div class="pl_right">
+                <p>奔腾的心：<em>这一地树叶的看着就滑，还不慢点开</em></p>
+            </div>
+            <div style=" clear:both; overflow:hidden;"></div>
+        </div> 
+        <div class="line"></div>
+        <div class="pl_conInfo">
+            <div class="pl_left"><img src="img/xq_4.png"  width="50" height="50"/></div>
+            <div class="pl_right">
+                <p>Yuri_mui：回复  奔腾的心：<em>车不错，就是贵！</em></p>
+            </div>
+            <div style=" clear:both; overflow:hidden;"></div>
+        </div> 
+        <div class="line"></div>
+   	</div>
+    <div class="loadmore" id="onload"><p>加载更多</p></div>
+</section>
+</body>
+</html>
+<script type="text/javascript">
+
+	//window.addEventListener( "load", function() {
+    			//FastClick.attach( document.body );
+		//}, false );
+		
+$(function () {
+	
+	$("#onload").click(function(){
+		 var boardDiv = '<div class="pl_conInfo"><div class="pl_left"><img src="img/xq_4.png"  width="50" height="50"/></div><div class="pl_right"><p>Yuri_mui：回复  奔腾的心：车不错，就是贵！</p></div> <div style=" clear:both; overflow:hidden;"></div></div><div class="line"></div>';
+			$('.pl_list').append(boardDiv);
+		});
+		
+		
+		        //评论列表里的点赞
+
+        $(".userDz_sz").click(function () {
+            if ($(this).attr("dz") == undefined || $(this).attr("dz") != "1") {
+                var s = $(this).find("span").text();
+                var z = parseInt($(this).find("span").text());
+                s = z + 1;
+                $(this).find("span").text(s);
+                $(this).attr("dz", "1");
+            }
+        });
+	})
+</script>

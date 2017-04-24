@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+<link href="css/reset.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/panduants.js"></script>
+<script type="text/javascript" src="js/kazu_common.js"></script>
+<style type="text/css">
+	.addBox_1
+	{ 
+		position:absolute; 
+		left:60%; 
+		top:50%; 
+		z-index:99999; 
+		width:50%; 
+		height:40px; 
+		background-color:rgba(0,0,0,1);
+		opacity:0.65; 
+		filter:alpha(opacity=65);
+		border-radius:10px; 
+		line-height:40px; 
+		text-align:center;
+		color:#fff; 
+		font-size:15px;
+		margin-left:-35%;
+	
+	}
+
+</style>
+
+</head>
+
+<body>
+<!--header-->
+<header>
+    <div class="head_logo">
+        <h4>登录</h4>
+        <img src="img/fh.jpg" class="fh_img" width="20">
+        <a class="fh_btn" onClick="javascript :history.back(-1);"></a>
+    </div>
+</header>
+<section>
+	<div class="login_form">
+    	<div class="tt"><img src="img/tt.jpg"/></div>
+        <div class="form">
+        	<div><input type="text"  placeholder="手机号" class="txtphone"/></div>
+            <div><input type="password"  placeholder="密码" class="txtPassword" maxlength="8"/></div>
+            <div class="login_btn"><a id="btnLogin">登&nbsp;&nbsp;录</a></div>
+        </div>
+        <div class="login_zc">
+        	<a href="register.html" class="gray">我要注册</a>
+            <a href="findpwd.html" class="blue">忘记密码</a>
+        </div>
+    </div>
+</section>
+<div id="addBox" style="display:none;" class="addBox_1">请输入手机号</div>
+<div id="addBox2" style="display:none;" class="addBox_1">请输入密码</div>
+<div id="addBox3" style="display:none;" class="addBox_1">手机号不正确</div>
+</body>
+</html>

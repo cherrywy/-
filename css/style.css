@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#eaebef;}
+
+/*登录*/
+.head_logo h4{ font-size:16px; color:#434343; letter-spacing:2px;font-weight:normal;}
+.head_logo{ text-align:center; width:100%; background:#f4f2f3;position:relative; height:50px; line-height:50px; position:fixed; z-index:999; border-bottom:1px solid #a6a7ab;}
+
+.fh_img{ position:absolute; top:34%; left:20px}
+.fh_btn{ display:inline-block; width:80px; height:45px; position:absolute; top:0; left:0}
+
+.head_logo img{ width:10px}
+
+section{ padding-top:32%;}
+section .login_form{ text-align:center;}
+section .login_form .tt{ margin-bottom:10%;}
+section .login_form .tt img{ width:100px; height:100px; border-radius:50px;}
+section .login_form .form input{border:1px solid #fff; width:65%; background:#fff; height:25px; line-height:25px; padding:10px; border-radius:45px; text-align:center; color:#454545; font-size:13px;   margin-bottom:20px; outline:none;}
+section .login_form .form .login_btn a{ display: block; width:70%; margin:0 auto; background:#434343; height:45px; line-height:45px; text-align:center;border-radius:45px;
+  color:#fff;font-size:13px;}
+section .login_form .login_zc{ margin-top:13%;}
+section .login_form .login_zc a{ font-size:14px; font-weight:500;}
+section .login_form .login_zc a.gray{ color:#727272; margin-right:6%;}
+section .login_form .login_zc a.blue{ color:#005eac;margin-left:6%;}
+
+/*注册*/ /*找回密码*/
+section .login_form .register input{border:1px solid #fff; background:#fff; height:20px; line-height:20px; padding:10px; text-align:left; 
+color:#727272; font-size:13px;   margin-bottom:24px; outline:none;}
+section .login_form .register .tel input,section .login_form .register .newpwd input{ width:65%;}
+section .login_form .register .yzm input{ width:22%;}
+section .login_form .register .yzm span{ float:right;display:inline-block; width:40%; height:30px; line-height:30px; text-align:center; color:#fff; font-size:13px; background:#b4b4b4; border-radius:15px; margin-top:8px; margin-right:3%;}
+section .login_form .register .tel{ width:80%; height:45px; line-height:45px; background:#fff url(../img/zc_ico1.png) 5% center no-repeat; background-size:20px 27px; margin:0 auto; margin-bottom:6%;}
+section .login_form .register .yzm{ width:80%; height:45px; line-height:45px; background:#fff url(../img/zc_ico2.png) 5% center no-repeat; background-size:21px 21px;margin:0 auto;margin-bottom:6%;}
+section .login_form .register .newpwd{ width:80%; height:45px; line-height:45px; background:#fff url(../img/zc_ico3.png) 5% center no-repeat; background-size:21px 23px;margin:0 auto;margin-bottom:6%;}
+section .login_form .register_btn{ margin-top:13%;}
+section .login_form .register_btn a{display: block; width:70%; margin:0 auto; background:#454545; height:45px; line-height:45px; text-align:center;border-radius:45px;
+  color:#fff;font-size:13px;}
+
+/*个人中心*/
+section{ padding-top:18%;}
+section .person{ text-align:center;}
+section .person .tt{ margin-bottom:4%;}
+section .person .tt img{ width:100px; height:100px; border-radius:50px;}
+
+section .personcon{ padding:0 10px 0 10px;}
+section .personcon .row{ width:85%; height:45px; line-height:45px; font-size:13px; color:#727272;  padding-left:15%; margin-bottom:1px;}
+section .personcon .name{background:#fff url(../img/p_01.png) 4% center no-repeat; background-size:25px 25px;}
+section .personcon .phone{background:#fff url(../img/p_01_1.png) 4% center no-repeat; background-size:25px 30px; margin-bottom:10px; }
+section .personcon .zl{background:#fff url(../img/ws_01.png) 4% center no-repeat; background-size:25px 21px;}
+section .personcon .dz{background:#fff url(../img/zan_ico.png) 4% center no-repeat; background-size:25px 25px;}
+section .personcon .pl{background:#fff url(../img/pl_ico.png) 4% center no-repeat; background-size:25px 25px;}
+section .personcon .bf{background:#fff url(../img/bf_ico.png) 5% center no-repeat; background-size:25px 25px;}
+
+section .personcon .dd a,section .personcon .zl a{ color:#727272;}
+
+section .btn{margin-top:10%;}
+section .btn a{display: block; width:70%; margin:0 auto; background:#434343; height:45px; line-height:45px; text-align:center;border-radius:45px;
+  color:#fff;font-size:13px;}
+
+section .btn2 a{background:#c2c2c2;}
+
+/*完善资料*/
+section .personcon1{ padding:0 10px 0 10px;}
+section .personcon1 .row{ width:80%; height:45px; line-height:45px; font-size:16px; color:#727272;  padding-left:16%; padding-right:4%;}
+section .personcon1 .row input{ width:100%; height:35px; line-height:35px; border:none; outline:none; color:#727272; font-size:16px;padding-left:2px;}
+section .personcon1 .row select{width:100%; height:35px; line-height:35px; border:none; outline:none; color:#727272; font-size:16px;-webkit-appearance:none;}
+section .personcon1 .name{background:#fff url(../img/p_01.png) 4% center no-repeat; background-size:25px 25px; margin-bottom:1px;}
+section .personcon1 .phone{background:#fff url(../img/ws_01.png) 4% center no-repeat; background-size:25px 21px; margin-bottom:1px;}
+section .personcon1 .dd{background:#fff url(../img/p_01_1.png) 4% center no-repeat; background-size:25px 30px;margin-bottom:8%;}
+
+
+section .personcon2{padding:0 10px 0 10px;}
+section .personcon2 ul{ width:100%;}
+
+section .personcon2 ul li{ width:24.2%; background:#fff; text-align:center; border-right:3px solid #e6e6e6;padding-bottom:5px;}
+
+
+.personcon2 ul li img{ width:100%}
+.personcon2 ul li a i{ font-size:12px; color:#727272; }
+.wukasq{ margin-right:10%; margin-top:5%; }
+.wukasq a{ font-size:14px;}
+
+.left{ float:left}
+.right{ float:right}
+
+/*浏览记录*/
+.recordContent{ padding:0px 14px 0px 14px;}
+.recordContent .r_con{ margin-top:15px;}
+.recordContent .r_con .r_con_l{width:34.2%;position:relative;}
+.recordContent .r_con .r_con_l img{ width:100%; }
+.recordContent .r_con .r_con_r{ width:64%; border-bottom:1px solid #b3b3b9; padding-bottom:10px;}
+.recordContent .r_con .r_con_r em{ display:inline-block; font-style:normal; color:#2e2e2e; font-size:16px; font-weight:600; padding-bottom:5px; padding-left:8px;}
+.recordContent .r_con .r_con_r p{ color:#2a2a2b;font-size:14px; line-height:24px; font-weight:lighter;padding-left:8px; overflow:hidden;}
+.recordContent .r_con .r_con_r p samp{ font-weight:600;}
+
+
+
